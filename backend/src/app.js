@@ -23,7 +23,7 @@ app.use("/api/v1/users", userRoutes);
 
 const start = async () => {
     app.set("mongo_user")
-    const connectionDb = await mongoose.connect("mongodb+srv://ajit222146:Ajit7388%40@apna-zoom.zhitx.mongodb.net/?retryWrites=true&w=majority&appName=Apna-zoom")
+    const connectionDb = await mongoose.connect("mongodb+srv://ajit222146:Ajit7388@apna-zoom.zhitx.mongodb.net/?retryWrites=true&w=majority&appName=Apna-zoom")
 
     console.log(`MONGO Connected DB HOst: ${connectionDb.connection.host}`)
     server.listen(app.get("port"), () => {
